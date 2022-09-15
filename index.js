@@ -7,10 +7,8 @@ const PORT = process.env.PORT || 5000
 
 connectDB()
 
-app.use('/api/song', mp3apiRouter)
-app.get('/', (req, res) => {
-    res.send('eheheeh')
-})
+// app.use('/api/song', mp3apiRouter)
+app.get('/', mp3apiRouter)
 app.listen(PORT, () => {
     console.log('server is running')
 })
