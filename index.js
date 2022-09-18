@@ -9,6 +9,7 @@ connectDB()
 
 // app.use('/api/song', mp3apiRouter)
 app.get('/', mp3apiRouter)
+app.get('/api/music', mp3apiRouter)
 app.listen(PORT, () => {
     console.log('server is running')
 })
